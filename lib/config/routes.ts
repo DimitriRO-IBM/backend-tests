@@ -12,6 +12,6 @@ export class Routes {
 
         app.route("/customers").get(this.customersController.getAll);
 
-        // app.route("/customers").get('/:id', this.customersController.getById)
+        app.route("/customers/:id").get(this.customersController.getById);
     }
 }
